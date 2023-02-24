@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    background: url(../assets/img/logo-utama.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+}
+
+header {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    color: #ea2121;
+    background-color: #f5e3e3;
+    padding-block: 1rem;
+    z-index: 999;
+}
+
+header h1 {
+    margin-left: 50px;
+}
+ 
+nav {
+    display: flex;
+    background-color: #f5e3e3;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: #cb1a1a;
+    position: sticky;
+    top: 0;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #d13b12;
+    padding: .1rem 1rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #d13b12;
+    color: white;
+
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    overflow: auto;
+    align-items: center;
+    text-align: justify;
+    color: #ea2121;
+    margin-left: auto;
+}
+
+#content {
+    float: left;
+    width: 60%;
+    flex: 1;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#content h2 {
+    background-color: #ea2121;
+    color: #f5e3e3;
+    text-align: center;
+}
+
+#content .baca {
+    margin-bottom: 150px;
+}
+
+#content .baca img {
+    margin: auto;
+    min-width: 200px;
+    width: 50px;
+    float: right;
+    margin-left: 20px;
+}
+
+#content .viral {
+    margin-bottom: 150px;
+}
+
+#content .viral img {
+    width: 10px;
+    float: right;
+    margin-left: 20px;
+}
+
+#content .spot {
+    margin-bottom: 150px;
+}
+
+#content .spot img {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-left: 20px;
+}
+
+#content button {
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    color: white;
+    border: 3px solid #ea2121;
+    border-radius: 999px;
+    background-color: white;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+#content .baca .logo img {
+    margin: auto;
+    min-width: 0px;
+    width: 100px;
+    height: 30px;
+}
+
+
+#content button:hover {
+    border: 3px solid #ea2121;
+    color: #2D3E50;
+    background-color: #ea2121;
+}
+
+
+aside {
+    float: right;
+    width: 35%;
+    padding-left: 20px;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.baca-profil h2 {
+    background-color: #ea2121;
+    color: #f5e3e3;
+    text-align: center;
+}
+
+article h2 {
+    background-color: #ea2121;
+    color: #f5e3e3;
+    text-align: center;
+    margin-top: 20px;
+}
+
+img {
+    margin: auto;
+    min-width: 180px;
+    width: 2px;
+}
+
+aside .social-media {
+    float: right;
+    margin: auto;
+}
+
+aside .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #ea2121;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+aside .social-media li {
+    list-style-type: none;
+}
+
+aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+aside .social-media li a:hover {
+    color: #89b0d9;
+}
+
+footer {
+    background: #d13b12;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -5px;
+    top: -3px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #921818;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+    }
+
+
+    nav ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main {
+      padding: 1rem 3rem;
+    }
+   
+    #content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+   
+}
+
+
+@media screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    
+    nav ul {
+        position: absolute;
+        right: 100;
+        top: 0;
+        left: 100%;
+        width: 1000%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f5e3e3;
+        z-index: 2;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+        transition: all 1s;
+    }
+
+}
